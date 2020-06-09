@@ -1,0 +1,86 @@
+---
+title: "Homework1_Sackler_Summer2020"
+author: "Fred LaPolla"
+date: "6/8/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Homework 1
+
+>- Create a list of numbers 1 to 100 and name this list FirstHundred
+
+```{r}
+
+```
+
+>- On your own, explore crusio1 and find the median and mean activity times:
+
+```{r}
+
+```
+
+
+
+>- Find summary information about the bodyweights in our mouse data (hint: names(crusio1) will call the names of each column). What is the max value, what is the minimum value.  
+
+```{r}
+
+```
+
+>- Bonus/Challenge: What is the Standard Deviation and skewness of the bodyweight?
+
+```{r}
+
+```
+
+
+>- Install a package and load, such as "ggplot2" or "dplyr"
+
+```{r}
+
+```
+
+
+>- What is a directory? How can you look up the current directory in which you are working in R?
+
+```{r}
+
+```
+
+
+>- How does one read in a CSV file of data into R?
+
+```{r}
+
+```
+
+>- What two commands are needed to install and use a package in R?
+
+```{r}
+
+```
+
+>- What are reasons one would choose to use R for data analysis?
+
+>- When you read in a .csv file into R, what class is the object that you read in (like crusio1)?
+
+>- What command can you use to determine what type of data is in a column?
+
+>- Provide a command to find the type of data in the DX_DBTS column of nyc. 
+
+>- Provide the same command the type of data but use the other way of indexing from what you did above. 
+
+>- In the above Matrix example we made a subset of which columns?
+
+>- What would happen if we had chosen the first 4 columns and made a matrix? What would the class of the cells in this matrix be? Why?
+
+>- If we make a vector,vec<- c(3,9,4,7,8,9), and multiply it by WannaMatrix, what is the value in the third row, third column? 
+
+>- What happens if instead we made a vector vec2 <- c(3,9,4,7,8) and multiply it by WannaMatrix, what is the third row, third column value? What is going on? 
+
+

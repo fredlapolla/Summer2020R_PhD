@@ -1,5 +1,5 @@
 ---
-title: "Intro to R for Scientific Researchers"
+title: "Intro to R for Data Analysis I"
 author: "Fred LaPolla"
 date: "July 6, 2020"
 output:
@@ -10,9 +10,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# R for Analysis
 
-***
+
 
 
 
@@ -207,6 +206,8 @@ It will make life easier to keep the raw data files that you analyze in this sam
 
 Version control is essentially the same as "track changes" in Word: a way to see what changes were made each time you update a file.
 
+A comprehensive reference for integrating Git with R: https://happygitwithr.com/ 
+
 ***
 
 ## R Projects and GitHub
@@ -298,7 +299,7 @@ You can get more information on commands by going to Help > Cheatsheets > Markdo
 
 Some key formatting is 
 
-<command> + <option> + <i> inserts a code chunk. This is excecutable code amid text. 
+command + option + i inserts a code chunk. This is excecutable code amid text. 
 
 ' *** creates a page break
 ' ## creates a header
@@ -306,11 +307,11 @@ Some key formatting is
 
 ***
 
-# Mentimeter Question
+## Mentimeter Question
 
 ***
 
-# R syntax
+## R syntax
 
 
 ## Running Commands
@@ -383,7 +384,7 @@ mean(OneToTen)
 
 ***
 
-# Mentimeter Question
+## Mentimeter Question
 
 ***
 
@@ -447,18 +448,18 @@ Try pulling in data:
 
 ```
 
-One possible solution is:
+>- One possible solution is:
 
->library(RCurl)
->url <- getURL("https://raw.githubusercontent.com/fredwillie/R_PhDProg_NYU_2020/master/Crusio1.csv")
-> crusio1 <- read.csv(text = url)
+>- "library(RCurl)
+>- url <- getURL("https://raw.githubusercontent.com/fredwillie/R_PhDProg_NYU_2020/master/Crusio1.csv")"
+>- crusio1 <- read.csv(text = url)
 
-A more direct option is to just say 
->data <- read.csv("data.csv")
+>- A more direct option is to just say 
+>- data <- read.csv("data.csv")
 
-assuming you have a csv on your computer calle data
+>- assuming you have a csv on your computer calle data
 
-What this does is sets a website, in this case the location of the raw crusio1 data on github, then tells "read.csv()" to use that URL as its dataframe location. 
+>- What this does is sets a website, in this case the location of the raw crusio1 data on github, then tells "read.csv()" to use that URL as its dataframe location. 
 
 
 Go to Mentimeter and give a thumbs up when done.
@@ -727,5 +728,5 @@ attackers <- filter(crusio1, attack_combine == 1)
 head(attackers)
 ```
 
-*** 
+
 

@@ -18,6 +18,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+To import the Crusio1 data run the following:
+
+```{r echo = TRUE}
+install.packages("RCurl", repos = "http://cran.us.r-project.org")
+library(RCurl)
+url <- getURL("https://raw.githubusercontent.com/fredwillie/R_PhDProg_NYU_2020/master/Crusio1.csv")
+crusio1 <- read.csv(text = url)
+```
+
 >- On your own, explore crusio1 and find the median and mean activity times:
 
 ```{r}
@@ -26,7 +35,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
->- Find summary information about the bodyweights in our mouse data (hint: names(crusio1) will call the names of each column). What is the max value, what is the minimum value.  
+>- Find summary information about the bodyweights in our mouse data (hint: this column is named "bw" will call the names of each column). What is the max value, what is the minimum value.  
+
 
 ```{r}
 
@@ -67,20 +77,59 @@ knitr::opts_chunk$set(echo = TRUE)
 
 >- What are reasons one would choose to use R for data analysis?
 
+
+
+
 >- When you read in a .csv file into R, what class is the object that you read in (like crusio1)?
 
+
+
 >- What command can you use to determine what type of data is in a column?
+```{r}
 
->- Provide a command to find the type of data in the DX_DBTS column of nyc. 
+```
 
->- Provide the same command the type of data but use the other way of indexing from what you did above. 
 
->- In the above Matrix example we made a subset of which columns?
+>- Provide a command to find the type of data in the attack_combine column in crusio1. 
+
+```{r}
+
+```
+
+
+>- Provide the same command to find the type of data but use the other way of indexing from what you did in the previous question. By indexing we mean the locating of columns and rows with square brackets [ ].
+
+```{r}
+
+```
+
+
+>- In the  Matrix example below, how many columns will be in the resulting matrix? How many rows?
+
+```{r}
+mat <- as.matrix(crusio1[,11:14])
+```
+
 
 >- What would happen if we had chosen the first 4 columns and made a matrix? What would the class of the cells in this matrix be? Why?
 
->- If we make a vector,vec<- c(3,9,4,7,8,9), and multiply it by WannaMatrix, what is the value in the third row, third column? 
+```{r}
 
->- What happens if instead we made a vector vec2 <- c(3,9,4,7,8) and multiply it by WannaMatrix, what is the third row, third column value? What is going on? 
+```
 
+
+
+
+>- If we make a vector,vec<- c(3,9,4,7,8,9), and multiply it by the first three rows of mat, what is the value in the third row, second column? 
+
+```{r}
+
+```
+
+
+>- What happens if instead we made a vector vec2 <- c(3,9,4,7,8) and multiply it by the first five rows of mat, what is the third row, second column value? What is going on? 
+
+```{r}
+
+```
 

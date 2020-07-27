@@ -1,0 +1,89 @@
+---
+title: "GroupWork727"
+author: "Fred LaPolla"
+date: "7/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Convert the following data into a matrix, with rownames for the genes being named. Re-order the columns to group WT and KO mice strains together. Make subsets of highly expressed genes (choose your own threshold) 
+
+```{r, echo = TRUE}
+library(RCurl)
+url <- getURL("https://raw.githubusercontent.com/fredwillie/RScience2020/master/counts.normalized.csv")
+dolgalevNormRNA <- read.csv(text = url)
+
+```
+
+
+## Group Work
+
+Try making a heatmap of the data you subsetted in part 1. Try both clustering by column and setting this setting to false. Explore the help information and see what other row clustering methods are available
+
+
+```{r}
+
+```
+
+***
+## Group work
+
+Explore the R Color Brewer Palettes and try a different coloration for a heatmap.
+
+```{r}
+
+```
+
+## Group Work
+
+Try out using GGplot to make a scatter plot of A1C vs Glucose. Remember there will be two parts: where you assign the aes and then where you add a geom
+
+```{r}
+
+```
+
+## Group work
+
+Try making the same A1C vs Glucose scatter plot but add in a line estimating linear correlation:
+
+```{r}
+
+```
+
+## Group work
+
+Make a histogram of lead levels, experiment with updating the binwidth. Make a boxplot of diabetes diagnosis vs glucos level.
+
+```{r}
+
+```
+
+
+## Group Work
+
+Try making a bar chart with error bars for mean Glucose by diabetes diagnosis
+
+```{r}
+
+```
+
+## Group Work
+
+Explore the palettes on R color brewer. Try changing the color scale on a scatter plot of glucose vs. A1C
+
+```{r}
+
+```
+
+
+## Group work
+
+Try adjusting the X and Y scales to be in increments of 50 for glucose, 2 for A1C in your scatter plot of A1C vs Glucose. Change the theme (background), update the X and Y labels to say "A1C level" and "Glucose level".
+
+```{r}
+
+```

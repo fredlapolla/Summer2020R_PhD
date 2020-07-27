@@ -1,0 +1,36 @@
+---
+title: "July 15 Group Work"
+author: "Fred LaPolla"
+date: "7/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Group Work Apply 1
+
+Try applying a function across the num_arms_d1 through d5 of crusio data to divide each value by the maximum number of arms to get a proportion of how many arms out of the total the mice tried:
+
+```{r}
+
+```
+
+## Group Work 2
+
+Create a dichotomous variable to tag upper outliers for time spent in center (center_time) as 1 and everything else as zero. Outliers are calculated by being more than 1.5 X the interquartile range. The interquartile range is the "distance" from the third quartile to the first. So the outliers for this are the 3rd quartile + 1.5 * the interquartile range. 
+
+
+## Group Work: Use of filter and operators 3
+
+</br>
+</br>
+</br>
+
+You can combine these terms with the filter command to make subsets that meet certain criteria. Maybe you would only want gene expression levels above some threshold. Try out combining filters to only get mice with of strain bxd102 and with a male sex. 
+
+```{r}
+
+```
+

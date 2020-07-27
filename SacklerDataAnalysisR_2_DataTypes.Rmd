@@ -1,7 +1,7 @@
 ---
-title: "R for Scientific Researchers: Data Types and Structures"
+title: "R for Scientific Researchers: Data Types"
 author: "Fred LaPolla"
-date: "7/8/2020"
+date: "7/13/2020"
 output: slidy_presentation
 ---
 

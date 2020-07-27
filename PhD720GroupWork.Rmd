@@ -1,0 +1,50 @@
+---
+title: "R PhD Class Group Work 7/20/2020"
+author: "Fred LaPolla"
+date: "7/19/2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo = TRUE}
+library(RCurl)
+url <- getURL("https://raw.githubusercontent.com/fredwillie/R_PhDProg_NYU_2020/master/Crusio1.csv")
+crusio1 <- read.csv(text = url)
+  
+```
+
+## Group Work
+
+Try using is.na and na.omit to remove from bw and task_time_d1 respectively.
+
+```{r}
+
+```
+
+## Group Work
+
+Try using recode_factor to change the values of attack_combine to "no" and "yes" (this is just for practice, so don't worry about the prior point with numerical values for modelling).
+
+```{r}
+
+```
+
+
+## Group Work
+
+Try using Mutate to make a new variable of num_arms_d1 divided by 8 (the total number of possible arms)
+
+```{r}
+
+```
+
+## Group Work
+
+Use Grep to locate the DBA/2J strain of mice
+
+```{r}
+
+```

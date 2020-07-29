@@ -1,0 +1,69 @@
+---
+title: "July 29 2020 Group Work"
+author: "Fred LaPolla"
+date: "7/29/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Pulling in data
+
+```{r, echo = TRUE}
+library(RCurl)
+url <- getURL("https://raw.githubusercontent.com/fredwillie/R_PhDProg_NYU_2020/master/Crusio1.csv")
+crusio1 <- read.csv(text = url)
+  
+```
+
+
+## Group Work
+
+Try making a chart with both points and a line for center time vs center distance.
+
+```{r}
+
+```
+
+## Group work
+
+Make a histogram of center distance travelled, experiment with updating the binwidth. Make a boxplot of body weight by attack combined.
+
+```{r}
+
+```
+
+## Group Work
+
+Make a bar chart comparing the mean brainweight of attacking mice with error bars. 
+
+```{r}
+
+```
+
+
+## Group Work
+
+Explore the color brewer scales. Try using "display.brewer.all(colorblindFriendly = T)" to see the color blind friendly palettes. Add a color blind friendly palette to a chart of activity time vs. center distance, coloring by if they attacked or not (attack_combine)
+
+```{r}
+
+```
+
+## Group Work
+
+Make a chart of activity time vs. center distance and adjust the x access to have labeled breaks in increments of 2500 and the Y access in increments of 2000. 
+
+```{r}
+
+```
+
+## Group Work
+
+Copy your last chart and try out some of the themes available in Ggplot to update the background. What contexts would you want a lighter vs a darker background?
+
+```{r}
+
+```
